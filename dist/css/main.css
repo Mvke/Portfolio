@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #151414;
+    background: #0b0b0b;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #222020;
+    background: #181717;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -94,7 +93,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #222020;
+  background-color: #181717;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -112,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(34, 32, 32, 0.5); }
+      background: rgba(24, 23, 23, 0.5); }
 
 /*headings  */
 h1,
@@ -134,7 +133,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(34, 32, 32, 0.5); }
+    background: rgba(24, 23, 23, 0.5); }
 
 a {
   color: white;
@@ -147,6 +146,10 @@ header {
 
 .text-secondary {
   color: #b4f16e; }
+
+.bg-logo {
+  max-width: 100%;
+  max-height: 200px; }
 
 main {
   padding: 4rem;
@@ -166,20 +169,11 @@ main {
 .about-info {
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: "bioimages bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-
-.bio-image {
-  grid-area: bioimages;
-  border-radius: 50%;
-  border: #b4f16e 3px solid; }
-
-.aboutimg {
-  margin-left: auto;
-  margin-right: auto; }
+  grid-template-areas: "bio bio bioimages" "job1 job2 job3";
+  grid-template-columns: repeat(2, 1fr); }
 
 .bio {
-  text-align: start;
+  text-align: center;
   grid-area: bio;
   font-size: 1.5rem; }
 
@@ -189,11 +183,8 @@ main {
 .job-2 {
   grid-area: job2; }
 
-.job-3 {
-  grid-area: job3; }
-
 .job {
-  background: #494545;
+  background: #3f3c3c;
   padding: 0.5rem;
   border-bottom: #b4f16e 5px solid; }
 
@@ -242,7 +233,7 @@ main {
   color: white; }
 
 .btn-light {
-  background: #a39e9e;
+  background: #999595;
   color: #333; }
 
 @media screen and (max-width: 500px) {
@@ -278,7 +269,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bio" "job1" "job2";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

@@ -49,6 +49,11 @@ header {
 .text-secondary {
   color: $secondary_color;
 }
+
+.bg-logo {
+  max-width: 100%;
+  max-height: 200px;
+}
 main {
   padding: 4rem;
   height: 100%;
@@ -78,24 +83,13 @@ main {
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
-    "bioimages bio bio"
+    "bio bio bioimages"
     "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.bio-image {
-  grid-area: bioimages;
-  border-radius: 50%;
-  border: $secondary_color 3px solid;
-}
-
-.aboutimg {
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .bio {
-  text-align: start;
+  text-align: center;
   grid-area: bio;
   font-size: 1.5rem;
 }
@@ -106,10 +100,6 @@ main {
 
 .job-2 {
   grid-area: job2;
-}
-
-.job-3 {
-  grid-area: job3;
 }
 
 .job {
