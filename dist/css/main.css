@@ -52,9 +52,9 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url(../img/jaba.jpg);
+      width: 700px;
+      height: 700px;
+      background: url(../img/make.jpg);
       border-radius: 50%;
       border: solid 3px #b4f16e; }
   .menu .nav-item {
@@ -166,26 +166,19 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-.about-info {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-areas: "bio bio bioimages" "job1 job2 job3";
-  grid-template-columns: repeat(2, 1fr); }
-
 .bio {
   text-align: center;
-  grid-area: bio;
   font-size: 1.5rem; }
 
-.job-1 {
-  grid-area: job1; }
-
-.job-2 {
-  grid-area: job2; }
+.cards {
+  display: grid;
+  padding-top: 40px;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.7rem; }
 
 .job {
   background: #3f3c3c;
-  padding: 0.5rem;
   border-bottom: #b4f16e 5px solid; }
 
 .projects {
@@ -240,7 +233,9 @@ main {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .cards {
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -268,16 +263,19 @@ main {
       background: url("../img/orange.jpg");
       width: 150px;
       height: 150px; }
-  .about-info {
-    grid-template-areas: "bio" "job1" "job2";
-    grid-template-columns: 1fr; }
+  .cards {
+    grid-template-columns: repeat(2, 1fr); }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .cards {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 1171px) {
   .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .cards {
     grid-template-columns: repeat(4, 1fr); } }
