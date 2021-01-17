@@ -52,8 +52,8 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 700px;
-      height: 700px;
+      width: 630px;
+      height: 630px;
       background: url(../img/make.jpg);
       border-radius: 50%;
       border: solid 3px #b4f16e; }
@@ -253,16 +253,16 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 75vh;
+    height: 40vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 25vh;
+    height: 60vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portait {
-      background: url("../img/orange.jpg");
-      width: 150px;
-      height: 150px; }
+      background: url("../img/make.jpg");
+      width: 630px;
+      height: 630px; }
   .cards {
     grid-template-columns: repeat(2, 1fr); }
   .projects {
